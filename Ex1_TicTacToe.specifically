@@ -1,0 +1,36 @@
+This is a web app called "TicTacToe." We can also call it "TTT" or "ttt".
+ttt starts by waiting for some user input.
+When ttt gets some input it compares that input to a list.
+Here's that list: 00, 01, 02, 10, 11, 12, 20, 21, 22.
+If the user input is not on that list ttt (kindly) alerts the user "Sorry, I can't play with that input."
+Then it goes back to waiting.
+
+ttt has another list called "Os", and another list called "Xs", and a fourth list called "winning patterns".
+TTT also has a fifth list called "all Xs and Os".
+The "winning patterns" list is a matrix. Each item on the list is a "pattern", and each "pattern" has 3 "pairs".
+The list is: (these following line breaks are provided for human readibility)
+00, 01, 02;
+10, 11, 12;
+20, 21, 22;
+00, 10, 20;
+01, 11, 21;
+02, 12, 22;
+00, 11, 22;
+20, 11, 02.
+
+That first list is named "valid inputs".
+If the user input is on the "valid inputs" list ttt will (first) compare it to each item in the list of "Os".
+Then ttt will compare it to each item in the list of "Xs".
+If the user input is already on "Os" or "Xs" ttt will alert the user "Sorry, that position is already taken. Try a different one." and then go back to waiting.
+Otherwise ttt will add the user input to the list of "Os" and "all Xs and Os".
+Next, ttt will compare each "pattern" from the "winning patterns" list to the list of "Os".
+Specifically, ttt will compare each "pair" from each "pattern" to each item on the list of "Os".
+If every "pair" in a "pattern" is in the list of "Os" ttt alerts the user "You won!" then starts over.
+
+Next, ttt compares the list of "valid inputs" to the list of "all Xs and Os".
+If an item on the list of "valid inputs" is not on the list of "all Xs and Os" ttt will add that item to the list of "Xs" and the list of "all Xs and Os".
+If every "pair" in a "pattern" from the "winning patterns" list is on the list of "Xs" ttt will alert the user "I won!" and start over.
+
+If every item in the list of "valid inputs" is in the list of "all Xs and Os" ttt will alert the user "Looks like we have a stalemate." and then start over.
+Otherwise ttt goes back to waiting for more user input.
+(That's all TTT does!)
