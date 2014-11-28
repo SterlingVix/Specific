@@ -1,0 +1,21 @@
+This is a game called "RockPaperScissors".
+It can also be called "rps".
+
+The game has a list of "choices", which has three "options".
+They are "rock", "paper", and "scissors".
+
+"Rock" beats "scissors".
+"Scissors" beats "paper".
+"Paper" beats "rock".
+
+rps has multiple rounds.
+At the beginning of every round rps selects a random option from the list of choices.
+This selection is rps' "throw".
+Then rps waits for the user to input its "throw".
+
+Once the user gives its input, rps compares that input to the list of choices.
+If the user input is not on the list of choices, rps alerts the user with this message:
+"Sorry, ", and rps repeats the user's input, then continues: " is not a valid choice."
+Then rps begins a new round.
+
+... (more)
